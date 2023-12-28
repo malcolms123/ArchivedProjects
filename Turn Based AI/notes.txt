@@ -1,0 +1,25 @@
+GAME CLASS REQUIREMENTS
+	
+	methods:
+		draw_board: take in a pygame screen and populate it with a GUI
+		move: take in an encoded move and change position accordingly
+		all_moves: return all legal moves in the current position
+		mouse_event: receive mouse coordinates and react accordingly, return true if results in 	a move
+		copy: return a copy of itself
+
+	properties:
+		position: representation of the current state of the game
+		victory: boolean set to true once the game is over
+
+POSITION CLASS REQUIREMENTS
+
+	methods:
+		evaluate: return an evaluation of the current game state
+
+	properties:
+		turn: keep track of which player's turn it is (1 for player 1, -1 for player 2)
+
+AI CLASS REQUIREMENTS:
+	
+	methods:
+		move: take in a game class and return an encoded move
